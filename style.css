@@ -495,9 +495,10 @@ Utiliza las referencias de los breakpoints @media abajo */
     }
 
     .title__network {
-        flex-direction: row;
+        flex-direction: row-reverse;
         gap: 10px;
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     .title__container {
