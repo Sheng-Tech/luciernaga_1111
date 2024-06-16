@@ -186,7 +186,7 @@ section.servicios {
     justify-content: center;
 }
 
-.servicios__img {
+.servicios__img, .redesSociales__img {
     color: dodgerblue;
 }
 
