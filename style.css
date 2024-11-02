@@ -1,10 +1,6 @@
 /*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
 
 :root {
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
 }
@@ -30,18 +26,6 @@ a {
     text-decoration: none;
     color: var(--cor-de-link);
 }
-
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 section.menu {
@@ -79,7 +63,7 @@ nav {
     cursor: pointer;
 }
 
-.menu__list__item__contato {
+.menu__list__item__contacto {
     display: none;
 }
 
@@ -186,125 +170,34 @@ section.servicios {
     justify-content: center;
 }
 
-.servicios__img, .redesSociales__img {
+.servicios__img, .redesSociales__img, .tarifas__img {
     color: dodgerblue;
 }
 
-.skills__box ul {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-*/
-/* Sección Hobbies */
-section.hobbies{
+/*Sección Tarifas y Promociones*/
+section.tarifas {
     width: 90%;
     margin: 10px auto;
 }
 
-.hobbies__line {
+.tarifas__line {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
 }
 
-.hobbies__box {
+.tarifas__box {
     display: flex;
-    text-align: center;
-    align-items: center;
-    width: 150px;
-    height: 150px;
+    text-align: justify;
+    align-items: normal;
     margin: 20px auto;
     flex-direction: column;
     justify-content: center;
 }
 
-.hobbies__box ul {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-/* Imágenes de Logos */
-.hobbies__img, .skills__img {
-    font-style: normal;
-    font-size: 2rem;
-    color: dodgerblue;
-}
-
-/* Experiencia Académica */
-section.academic {
-    width: 90%;
-    margin: 30px auto;
-}
-
-.academic__title {
-    display: flex;
-}
-
-.academic__courses {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.academic__courses__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-}
-
-/* experiencia*/
-section.experience {
-    width: 90%;
-    margin: 30px auto;
-}
-
-.experience__box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-}
-
-.experience__img {
-    width: 70%;
-}
-
-.experience__botao--repo, .experience__botao--demo {
-    width: auto;
-    height: 30px;
-    align-self: center;
-    background: var(--cor-de-fundo);
-    border: solid 2px dodgerblue;
-    color: dodgerblue;
-}
-
-.experience__botao--repo:hover, .experience__botao--demo:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-    background: dodgerblue;
-    border: dodgerblue;
-    color: white;
-    font-weight: bold;
-}
-
 /*Contacto*/
-section.formcontato {
+section.formcontacto {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -313,46 +206,46 @@ section.formcontato {
     margin: 30px auto;
 }
 
-.formcontato__contacto {
+.formcontacto__contacto {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.formcontato__form {
+.formcontacto__form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
 
-.formcontato__input {
+.formcontacto__input {
     height: 25px;
     width: 100%;
     border: transparent;
 }
 
-.formcontato__textarea {
+.formcontacto__textarea {
     width: 100%;
     border: transparent;
     height: 220px;
 }
 
-.formcontato__input:hover, .formcontato__textarea:hover, .formcontato__botao:hover {
+.formcontacto__input:hover, .formcontacto__textarea:hover, .formcontacto__botao:hover {
     cursor: pointer;
 }
 
-.formcontato__input:focus, .formcontato__textarea:focus {
+.formcontacto__input:focus, .formcontacto__textarea:focus {
     outline: none;
     border-bottom: 3px solid dodgerblue;
 }
 
-.formcontato__input::placeholder, .formcontato__textarea::placeholder {
+.formcontacto__input::placeholder, .formcontacto__textarea::placeholder {
     color: dodgerblue;
     font-size: 10px;
 }
 
-.formcontato__botao {
+.formcontacto__botao {
     width: auto;
     height: 30px;
     align-self: center;
@@ -362,7 +255,7 @@ section.formcontato {
     font-weight: bold;
 }
 
-.formcontato__botao:disabled {
+.formcontacto__botao:disabled {
     background: var(--cor-de-fundo);
     border: solid 2px lightgray;
     color: lightgray;
@@ -378,6 +271,7 @@ section.footer {
 .footer__rodape {
     text-align: center;
     align-self: auto;
+    font-size: 10px;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
@@ -408,7 +302,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         margin: auto 20px;
     }
 
-    .menu__list__item__contato {
+    .menu__list__item__contacto {
         display: flex;
     }
 
@@ -436,18 +330,14 @@ Utiliza las referencias de los breakpoints @media abajo */
         font-size: 12px;
     }
     
-    /*Hobbies*/
-
-    /*Formación Académica*/
-
-    /*Experiencia Profesional*/
+    
 
     /*Contacto*/
-    .formcontato--esquerda {
+    .formcontacto--esquerda {
         display: none;
     }
 
-    .formcontato__botao {
+    .formcontacto__botao {
         width: auto;
         align-self: flex-start;
     }
@@ -466,7 +356,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 20%;
     }
 
-    .menu__list__item__contato {
+    .menu__list__item__contacto {
         align-self: center;
         gap: 20px;
     }
@@ -524,60 +414,14 @@ Utiliza las referencias de los breakpoints @media abajo */
         width: 90%;
     }
 
-    /*Skills*/
-    section.skills, section.hobbies {
-        width: 90%;
-    }
-
-    .skills__line, .hobbies__line {
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: left;
-        justify-items: left;
-    }
-
-    /*Hobbies*/
-    .hobbies__box, .skills__box {
-        width: 120px;
-        height: 120px;
-        gap: 30px;
-    }
     
-    /*Formación Académica*/
-    section.academic {
-        margin: 20px auto;
-        gap: 30px;
-    }
-
-    .academic__courses {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .academic__courses__box {
-        text-align: center;
-    }
-
-    /*Experiencia Profesional*/
-    .experience__box {
-        flex-direction: column;
-    }
-
-    .experience__img {
-        width: 100%;
-    }
-
-    .experience__info {
-        align-self: flex-start;
-    }
 
     /*Contacto*/
-    .formcontato--esquerda {
+    .formcontacto--esquerda {
         display: none;
     }
 
-    .formcontato__botao {
+    .formcontacto__botao {
         width: auto;
         align-self: flex-start;
     }

@@ -29,9 +29,10 @@
                 <ul class="menu__list">
                     <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
                     <li class="menu__list__item"><a href="#servicios">Servicios</a></li>
+                    <li class="menu__list__item"><a href="#talleres">Tarifas y Promociones</a></li>
                     <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
                 </ul>
-                <li class="menu__list__item__contato"><a href="#contacto">Contacto</a></li>
+                <li class="menu__list__item__contacto"><a href="#contacto">Contacto</a></li>
             </nav>
         </section>
 
@@ -102,28 +103,66 @@
             </div>
         </section>
 
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div class="formcontato__contacto">
-                <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="./assets/contact_image.png">
+        <!-- Sección de tarifas y promociones -->
+        <section class="tarifas" id="tarifas">
+            <div class="tarifas__container">
+                <h3 class="tarifas__title">Tarifas y Promociones</h3>
+                <p>Nuestros talleres son realizados en dos modalidades:</p>
+                <div class="tarifas__box">
+                    <ul>
+                        <li class="tarifas__img"><i class="fa-brands fa-medrt"></i>Presenciales</li>
+                        <br>
+                        <li class="tarifas__price">tarifa: $60.</li>
+                        <li class="tarifas__duration">duración: 1 hora de sesión. (se recomiendan 4 sesiones)</li>
+                    </ul>
                 </div>
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h4 class="formcontato__subtext">Si deseas agendar una sesión de Reiki o necesitas más información sobre mis servicios, no dudes en contactarme: </h4>
-                    <h4 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h4>
-                    <form class="formcontato__form" name="form" method="POST" id="form">
+                <div class="tarifas__box">
+                    <ul>
+                        <li class="tarifas__img"><i class="fa-brands fa-medrt"></i>A distancia</li>
+                        <br>
+                        <li class="tarifas__price">tarifa: $40.</li>
+                        <li class="tarifas__duration">duración: 1 hora de sesión. (se recomiendan 4 sesiones)</li>
+                    </ul>
+                </div>
+                <div class="tarifas__box">
+                    <ul>
+                        <li class="tarifas__img"><i class="fa-brands fa-medrt"></i>Promociones</li>
+                        <br>
+                        <li class="tarifas__promo">Presencial</li>
+                        <li class="tarifas__price">tarifa: $200.</li>
+                        <li class="tarifas__duration">duración: 4 sesiones de 1 hora.</li>
+                        <br>
+                        <li class="tarifas__promo">A distancia</li>
+                        <li class="tarifas__price">tarifa: $140.</li>
+                        <li class="tarifas__duration">duración: 4 sesiones de 1 hora.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="formcontacto" id="contacto">
+            <div class="formcontacto__contacto">
+                <div class="formcontacto--esquerda">
+                    <img class="formcontacto__img" src="./assets/contact_image.png">
+                </div>
+                <div class="formcontacto__text">
+                    <h2 class="formcontacto__title">Contacto</h2>
+                    <h4 class="formcontacto__subtext">Si deseas agendar una sesión de Reiki o necesitas más información sobre mis servicios, no dudes en contactarme: </h4>
+                    <h4 class="formcontacto__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h4>
+                    <form class="formcontacto__form" name="form" method="POST" id="form">
                         <input type="hidden" name="access_key" value="6fd77b34-5b5f-4845-8f95-e007e53f8868">
                         <input type="hidden" name="subject" value="Nuevo Correo de tu portafolio">
                         <input type="checkbox" name="botcheck" id="" style="display: none;">
-                        <input class="formcontato__input" id="nombreContacto" type="text" name="nombre" placeholder="Nombre" required>
-                        <input class="formcontato__input" id="emailContacto" type="email" name="email" placeholder="E-mail" required>
-                        <input class="formcontato__input" id="asuntoContacto" type="text" name="asunto" placeholder="Asunto" required>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensajeContacto" name="mensaje" placeholder="Mensaje" required></textarea>
-                        <button type="submit" class="formcontato__botao" disabled>Enviar mensaje</button>
+                        <input class="formcontacto__input" id="nombreContacto" type="text" name="nombre" placeholder="Nombre" required>
+                        <input class="formcontacto__input" id="emailContacto" type="email" name="email" placeholder="E-mail" required>
+                        <input class="formcontacto__input" id="asuntoContacto" type="text" name="asunto" placeholder="Asunto" required>
+                        <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensajeContacto" name="mensaje" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="formcontacto__botao" disabled>Enviar mensaje</button>
                         <div id="result"></div>
                     </form>
-                    <h4 class="formcontato__subtext">También puedes seguirme en mis redes sociales para obtener más actualizaciones y contenido sobre terapias holísticas.</h4>
+                    <h4 class="formcontacto__subtext">También puedes seguirme en mis redes sociales para obtener más actualizaciones y contenido sobre terapias holísticas.</h4>
                     <p>NOTA: Marian hace falta tu que crees un correo para configurar el envío a tu cuenta, de momento está configurado con una cuenta de correos mía.</p>
                 </div>
             </div>
